@@ -1,0 +1,94 @@
+@keyframes city {
+  to {
+    transform: translate(-5%, -5%);
+    margin: 10px;
+    width: 320px;
+    height: 210px;
+    box-shadow: 1px 1px 8px cornflowerblue;
+  }
+}
+
+.card {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  display: inline-block;
+  transition: all .5s;
+}
+
+.card:hover {
+  transform: translate(-5%, -5%);
+  margin: 10px;
+  width: 320px;
+  height: 210px;
+  box-shadow: 3px 3px 8px cornflowerblue;
+  transition: all .5s;
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 80%;
+  font-size: x-large;
+}
+
+.title:hover {
+  color: white;
+}
+
+.country {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(210, 243, 255);
+  width: 15%;
+}
+
+.data {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+  grid-template-rows: 60px auto;
+  color: white;
+}
+
+.temp {
+  margin: 0;
+  height: 60px;
+  color: white;
+  justify-self: center;
+  font-weight: 500;
+  font-size: 50px;
+  grid-column: 1/5;
+  transform: translate(0, -15%);
+}
+
+.weatherIcon {
+  grid-column: 5;
+  grid-row: 1/3;
+  width: 80px;
+  align-self: center;
+  justify-self: center;
+}
+
+.subData {
+  grid-row: 2;
+}
+
+.closeButton {
+  border: none;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  left: 100%;
+  transform: translate(-110%, -10%);
+  font-size: 14px;
+}
+.closeButton:hover {
+  font-weight: 600;
+}

@@ -1,0 +1,19 @@
+.cards {
+  /* border: 1px red solid; */
+  padding: 10px;
+  width: 65%;
+  max-height: 630px;
+  justify-content: center;
+  overflow-y: scroll;
+  margin: 5px;
+}
+
+.cards::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+.cards::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: white 1px solid;
+}
